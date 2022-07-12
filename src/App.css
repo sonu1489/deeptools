@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Montserrat:wght@300&family=Open+Sans:wght@400;600&family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,600&family=Roboto:wght@100;400&display=swap");
+
+html,
+body,
+* {
+  font-family: "poppins" sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scrollTop {
+  position: fixed;
+  width: 100%;
+  bottom: 20%;
+  left: 44%;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}
+
+.App_container {
+  width: 100%;
+}
+
+nav {
+  padding: 0 50px;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: whitesmoke;
+}
+
+/* nav */
+.container {
+  color: rgb(251, 248, 248);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  width: 50%;
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  color: whitesmoke;
+}
+.home_img {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+    url("../public//image/meeting.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+  position: relative;
+}
+.header-content h1 {
+  font-size: 4rem;
+}
+
+.logo {
+  color: black;
+}
+
+/* Home */
+
+.col {
+  margin: 0 50px;
+  margin-top: 5%;
+}
+p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin: 1.6rem 0;
+}
+h1 {
+  font-weight: 800;
+  font-size: 36px;
+  margin: 1.6rem 0;
+}
+.about-us {
+  display: flex;
+  justify-content: space-around;
+  background-color: #9f9797;
+  padding-top: 60px;
+  margin-top: 80px;
+  margin-bottom: 20%;
+  height: 260px;
+}
+.card img {
+  object-position: 10% 20%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.card {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  width: 20%;
+  box-shadow: 10px 10px 10px #e9dbdb;
+  height: 400px;
+  text-align: center;
+}
+.customers {
+  text-align: center;
+}
+.company_title {
+  color: #0a0909;
+  padding: 10px 0;
+  background-image: linear-gradient(to bottom, gray, white);
+  margin-bottom: 50px;
+}
+.company_title h1 {
+  font-size: 3rem;
+  color: #6d6b6b;
+}
+.company_logo h1 {
+  width: fit-content;
+  display: inline-block;
+  color: rgb(226, 237, 226);
+  padding: 10px 40px;
+  margin: 40px;
+  margin-right: 80px;
+  padding: 50px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(37, 108, 222),
+    rgb(161, 183, 238)
+  );
+  filter: drop-shadow(10px 10px 10px rgb(84, 86, 84));
+}
+.company_logo h1:hover {
+  padding-bottom: 20px;
+}
+.company_logo {
+  margin: 30px;
+}
+
+/* contact */
+.contact_text {
+  color: green;
+  position: absolute;
+  top: 100px;
+  left: 500px;
+  font-family: "cursive";
+}
+.img-1 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  object-position: 5% 80%;
+  opacity: 50%;
+}
+.text {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+}
+
+.img_size {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.img_map {
+  margin: 20px;
+}
+.img_map img {
+  object-fit: fill;
+  width: 200px;
+  height: 200px;
+  vertical-align: middle;
+  border-radius: 10px;
+  filter: drop-shadow(10px 10px 10px rgb(84, 86, 84));
+}
+.product_container {
+  margin: auto;
+  width: 80%;
+}
+
+a:hover {
+  color: rgb(234, 244, 46);
+  border-bottom: 1px solid;
+  transition: 0.2s ease-in-out;
+}
+.manufacture {
+  /* margin-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%; */
+  padding: 20px 0px;
+  background-color: #333232;
+  display: flex;
+  justify-content: space-around;
+
+  /* background-image: linear-gradient(to right, black, rgb(198, 190, 190)); */
+}
+.manufacture a {
+  /* border-right: 1px solid gray; */
+  font-size: x-large;
+
+  color: rgb(241, 241, 253);
+  /* padding: 20px; */
+}
+.manufacture a:hover {
+  color: #b297faca;
+}
+footer {
+  background-color: #2b2a2a;
+  color: #fff;
+  height: 20vh;
+  text-align: center;
+}
+footer p {
+  padding-top: 4%;
+}
+.burger {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.nav {
+  display: block;
+}
+.showmenu {
+  background-color: rgb(248, 247, 253);
+  position: absolute;
+  top: 80px;
+  right: 60px;
+  display: none;
+  height: 23%;
+  margin-bottom: 30px;
+  background-image: linear-gradient(to bottom, rgb(130, 130, 123), black);
+  z-index: 10;
+}
+.showmenu:active {
+  color: #6d6b6b;
+}
+.showmenu li {
+  display: flex;
+}
+.showmenu li a:hover {
+  color: #0a0909;
+}
+a {
+  margin: 10px;
+}
+
+/* media */
+
+@media only screen and (max-width: 1024px) {
+  .header-content {
+    width: 80%;
+  }
+  .card {
+    width: 30%;
+  }
+  .about-us {
+    margin-bottom: 30%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .card h1 {
+    font-size: x-large;
+  }
+  .card {
+    width: 25%;
+  }
+
+  .about-us {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 996px) {
+  .about-us {
+    margin-bottom: 30%;
+  }
+  .card {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  p {
+    line-height: 1.5;
+    font-size: x-large;
+  }
+  .header-content {
+    width: 80%;
+  }
+  .about-us {
+    margin-bottom: 40%;
+  }
+  .card {
+    width: 30%;
+    height: 400px;
+  }
+
+  .company_logo h1 {
+    padding: 5px 10px;
+    margin: 20px;
+    margin-right: 40px;
+    padding: 20px;
+  }
+  .contact_text {
+    color: green;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    font-family: "cursive";
+  }
+
+  .img_size {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  .img_map {
+    margin: 10px;
+  }
+  .img_map img {
+    object-fit: fill;
+    width: 170px;
+    height: 170px;
+    vertical-align: middle;
+    border-radius: 10px;
+    filter: drop-shadow(10px 10px 10px rgb(84, 86, 84));
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .header-content h1 {
+    font-size: 3rem;
+    padding-top: 30px;
+  }
+  .company_title h1 {
+    font-size: 2rem;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 1rem 0;
+  }
+  p {
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+}
+@media only screen and (max-width: 666px) {
+  .burger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+  .showmenu {
+    display: block;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 1rem 0;
+  }
+  p {
+    line-height: 1.5;
+    font-size: x-large;
+  }
+  .col {
+    margin: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .about-us {
+    height: 120px;
+    padding-top: 20px;
+    margin: 40px 0px 150px;
+  }
+  .card {
+    height: 200px;
+    margin-top: 0;
+    width: 40%;
+  }
+  .card h1 {
+    font-size: large;
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  .card p {
+    font-size: medium;
+    margin: 0%;
+  }
+  .header-content {
+    width: 90%;
+    position: absolute;
+    left: 4%;
+    color: whitesmoke;
+  }
+
+  .header-content h1 {
+    line-height: 4rem;
+  }
+  .company_logo {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .company_logo h1 {
+    margin: 10px 20px 10px 10px;
+  }
+  .company_title {
+    margin-bottom: 20px;
+  }
+  footer p {
+    padding-top: 40px;
+    font-size: x-large;
+  }
+  nav {
+    padding: 0 30px;
+  }
+  .manufacture {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5px;
+
+    background-image: linear-gradient(
+      to right,
+      rgb(23, 23, 23),
+      rgb(143, 140, 140)
+    );
+  }
+  .manufacture a {
+    border-bottom: 1px solid rgb(91, 87, 87);
+    border-right: 0;
+    margin-right: 0px;
+    padding-right: 5px;
+    color: rgb(238, 238, 246);
+    padding: 5px;
+  }
+  .contact_text {
+    color: green;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: "cursive";
+  }
+  .text {
+    position: absolute;
+    top: 250px;
+    left: 30px;
+  }
+  .img_size {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .img_map {
+    margin: 10px;
+  }
+  .img_map img {
+    object-fit: fill;
+    width: 140px;
+    height: 140px;
+    vertical-align: middle;
+    border-radius: 10px;
+    filter: drop-shadow(10px 10px 10px rgb(84, 86, 84));
+  }
+}
+@media only screen and (max-width: 375px) {
+  .img_size {
+    padding-left: 10px;
+  }
+  .img_map {
+    margin: 10px;
+  }
+  .img_map img {
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .header-content h1 {
+    font-size: xx-large;
+    line-height: 3rem;
+  }
+  .company_title h1 {
+    font-size: 1.5rem;
+  }
+  .contact_text {
+    color: green;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-family: "cursive";
+  }
+  .text {
+    position: absolute;
+    top: 250px;
+    left: 30px;
+  }
+
+  .img_map img {
+    width: 200px;
+    height: 200px;
+    margin-left: 0;
+  }
+}
