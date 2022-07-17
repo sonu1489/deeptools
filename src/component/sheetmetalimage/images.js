@@ -1,3 +1,20 @@
+const people = [
+  {
+    id: 1,
+    img: "/image/machineparts/profile-pic.png",
+    name: "Chander pal Sharma",
+    design: "CEO",
+  },
+
+  {
+    id: 2,
+    img: "/image/machineparts/deepak.png",
+    name: "Deepak Sharma",
+    design: "Director",
+  },
+];
+export default people;
+
 export const sheetmetal = [
   {
     id: 1,
@@ -165,10 +182,10 @@ export const tools = [
 ];
 
 export const panelchecker = [
-  {
-    id: "1",
-    img: "/image/panelchecker/1.jpg",
-  },
+  // {
+  //   id: "1",
+  //   img: "/image/panelchecker/1.jpg",
+  // },
   {
     id: "2",
     img: "/image/panelchecker/2.jpg",
@@ -219,7 +236,7 @@ export const panelchecker = [
   },
   {
     id: "14",
-    img: "/image/panelchecker/1.jpg",
+    img: "/image/panelchecker/14.jpg",
   },
 ];
 

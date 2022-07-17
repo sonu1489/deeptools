@@ -76,6 +76,7 @@ a {
 }
 .header-content h1 {
   font-size: 4rem;
+  font-weight: 100;
 }
 
 .logo {
@@ -83,6 +84,59 @@ a {
 }
 
 /* Home */
+
+/* slider */
+.full-width {
+  width: 100%;
+  background-color: #292626;
+  padding-top: 1rem;
+  margin-top: 10rem;
+}
+
+.section-center {
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  height: 450px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /* transition: all 0.3s linear; */
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+article h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-family: "Times New Roman", Times, serif;
+}
+article img {
+  object-position: 10% 20%;
+  border-radius: 5%;
+  width: 40vh;
+  height: 40vh;
+}
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+article.lastSlide {
+  transform: translateX(-100%);
+}
+article.nextSlide {
+  transform: translateX(100%);
+}
+/* slider */
 
 .col {
   margin: 0 50px;
@@ -98,33 +152,7 @@ h1 {
   font-size: 36px;
   margin: 1.6rem 0;
 }
-.about-us {
-  display: flex;
-  justify-content: space-around;
-  background-color: #9f9797;
-  padding-top: 60px;
-  margin-top: 80px;
-  margin-bottom: 20%;
-  height: 260px;
-}
-.card img {
-  object-position: 10% 20%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
-}
 
-.card {
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-
-  width: 20%;
-  box-shadow: 10px 10px 10px #e9dbdb;
-  height: 400px;
-  text-align: center;
-}
 .customers {
   text-align: center;
 }
@@ -397,26 +425,38 @@ a {
 }
 
 @media only screen and (max-width: 425px) {
-  .about-us {
+  .section-center {
+    height: 550px;
+  }
+  article.activeSlide {
+    opacity: 1;
+    transform: translateX(0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* .about-us {
     height: 120px;
     padding-top: 20px;
     margin: 40px 0px 150px;
-  }
-  .card {
+  } */
+  /* .card {
     height: 200px;
     margin-top: 0;
     width: 40%;
-  }
-  .card h1 {
+  } */
+  /* .card h1 {
     font-size: large;
     font-weight: 500;
     margin: 0px;
     margin-bottom: 10px;
-  }
-  .card p {
+  } */
+  /* .card p {
     font-size: medium;
     margin: 0%;
-  }
+  } */
   .header-content {
     width: 90%;
     position: absolute;
@@ -424,9 +464,9 @@ a {
     color: whitesmoke;
   }
 
-  .header-content h1 {
+  /* .header-content h1 {
     line-height: 4rem;
-  }
+  } */
   .company_logo {
     margin: 10px;
     display: flex;
@@ -513,8 +553,10 @@ a {
 
 @media only screen and (max-width: 320px) {
   .header-content h1 {
-    font-size: xx-large;
-    line-height: 3rem;
+    /* font-size: xx-large; */
+    line-height: 4rem;
+    margin-top: 0;
+    padding: 0;
   }
   .company_title h1 {
     font-size: 1.5rem;
