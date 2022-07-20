@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import React from "react";
+
 const Nav = () => {
-  const [showmenu, setShowMenu] = useState(false);
   return (
     <>
       <nav>
@@ -12,18 +11,22 @@ const Nav = () => {
               <span style={{ color: "white" }}>Tools</span>
             </h1>
           </div>
-          <div onClick={() => setShowMenu(!showmenu)}>
-            <GiHamburgerMenu className="burger" />
-          </div>
-          <ul className={` ${showmenu ? "showmenu" : ""}`}>
+
+          <ul>
             <li>
-              <a href="/">Home</a>
+              <a className="a" href="/">
+                Home
+              </a>
             </li>
             <li>
-              <a href="/products">Products</a>
+              <a className="a" href="/products">
+                Products
+              </a>
             </li>
             <li>
-              <a href="/contactus">Contact Us</a>
+              <a className="a" href="/contactus">
+                Contact Us
+              </a>
             </li>
           </ul>
         </div>
