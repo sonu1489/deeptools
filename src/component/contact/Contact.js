@@ -4,14 +4,12 @@ const Contact = () => {
     <div>
       <div className="img-1">
         <img src="/image/tele-2.webp" alt="telephone" />
-        <h1 className="contact_text">Contact Us</h1>
         <div className="text">
           <h1>Deep Tools</h1>
           <h1>
-            Email :{" "}
-            <a style={{ color: "blue" }} href="#">
+            <span style={{ color: "blue" }} href="#">
               deeptools20@gmail.com
-            </a>
+            </span>
           </h1>
           <h1>Phone No : 7827121427</h1>
           <h1>
